@@ -5,6 +5,9 @@ import lk.ijse.dep9.entity.SuperEntity;
 
 import java.io.Serializable;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,13 +21,22 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public long count() {
-        return 0;
+        try {
+            PreparedStatement stm = connection.prepareStatement("SELECT COUNT(user_name) AS count FROM user");
+            ResultSet rst = stm.executeQuery();
+            rst.next();
+            return rst.getLong(1);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     @Override
     public void deleteById(Serializable PK) {
 
     }
+
 
     @Override
     public boolean existsById(Serializable PK) {

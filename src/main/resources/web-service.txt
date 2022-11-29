@@ -6,7 +6,7 @@ User (M1)
 
 To-do item
    M2 create a new to-do item         POST        /users/{username}/items
-   M2 update an existing to do item   PUT         /users/{username}/items/{item-id}
+   M2 update an existing to do item   PATCH         /users/{username}/items/{item-id}
    M2 get all to-so items             GET         /users/{username}/items
    M1 delete to-do item              DELETE      /users/{username}/items/{item-id}
    M2 delete all items                DELETE      /users/{username}/items

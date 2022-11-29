@@ -6,6 +6,7 @@ import lk.ijse.dep9.dao.custom.impl.UserDAOImpl;
 import java.sql.Connection;
 
 public class DAOFactory {
+
     private static DAOFactory daoFactory;
 
     private DAOFactory() {

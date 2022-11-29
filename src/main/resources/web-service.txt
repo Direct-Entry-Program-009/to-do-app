@@ -1,0 +1,12 @@
+User (M1)
+    create a new user account       POST        /users
+    delete user account             DELETE      /users/{username}
+    get user account details        GET         /users/{username}
+    [login]
+
+To-do item
+    create a new to-do item         POST        /users/{username}/items
+    update an existing to do item   PUT         /users/{username}/items/{item-id}
+    get all to-so items             GET         /users/{username}/items
+    delete to-do item              DELETE      /users/{username}/items/{item-id}
+    delete all items                DELETE      /users/{username}/items

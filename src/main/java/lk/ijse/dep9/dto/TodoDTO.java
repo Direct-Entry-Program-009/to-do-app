@@ -10,11 +10,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class TodoDTO {
+public class TodoDTO implements Serializable {
 
     @NotBlank (groups = {Groups.Delete.class, Groups.Update.class}, message = "Id cannot be empty")
     int id;

@@ -1,4 +1,6 @@
 package lk.ijse.dep9.dto;
 
-public class UserDTO {
+import java.io.Serializable;
+
+public class UserDTO implements Serializable {
 }

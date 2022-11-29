@@ -1,7 +1,6 @@
 package lk.ijse.dep9.dao;
 
-import lk.ijse.dep9.dao.custom.impl.TodoDAOImpl;
-import lk.ijse.dep9.dao.custom.impl.UserDAOImpl;
+import lk.ijse.dep9.dao.custom.impl.*;
 
 import java.sql.Connection;
 
